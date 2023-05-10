@@ -27,7 +27,11 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    'prettier/prettier': 0
+    'prettier/prettier': 0,
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: false }
+    ]
   },
   overrides: [
     {
